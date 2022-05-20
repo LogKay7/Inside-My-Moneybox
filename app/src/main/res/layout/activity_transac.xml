@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transac"
+    android:background="@color/white"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/arlrdbd"
+                        android:text="@string/titre_details"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/arlrdbd"
+                            android:text="@string/titre_transac"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/textv_solde_transac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/arlrdbd"
+                            android:text=" 5555,00 €"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textv_contenu_transac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/arlrdbd"
+                    android:gravity="center"
+                    android:text="La tirelire contient 0 pièces et 0 billets"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_search_24dp"
+                        android:tint="@color/green"
+
+                        />
+
+
+                    <EditText
+                        android:id="@+id/edittext_search_trancsac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@color/white_transparent"
+                        android:fontFamily="@font/arlrdbd"
+                        android:gravity="center"
+                        android:hint="Rechercher une transaction..."
+                        android:padding="2dp"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTransac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabMenu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewTransac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_animationDelayPerItem="50"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@color/colorButtonAdd"
+        app:menu_colorPressed="@color/cool_pink"
+        app:menu_colorRipple="@color/white_transparent"
+        app:menu_fab_label=""
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_settings_black_40dp"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_textColor="@color/colorButtonAdd"
+        app:menu_openDirection="up"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="2dp"
+        app:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenu_item_supprime_tout_transac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            app:fab_colorNormal="@color/colorButtonAdd"
+            app:fab_colorPressed="@color/cool_pink"
+            app:fab_colorRipple="@color/white_transparent"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="@string/transac_tout_supprimer"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini"
+            app:menu_showShadow="true"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenu_item_reinitialisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_forever"
+            app:fab_colorNormal="@color/colorButtonAdd"
+            app:fab_colorPressed="@color/cool_pink"
+            app:fab_colorRipple="@color/white_transparent"
+            app:fab_label="@string/transac_reinitialiser"
+            app:fab_size="mini"
+            app:menu_showShadow="true"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenu_item_retour_accueil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_house_white"
+            app:fab_colorNormal="@color/colorButtonAdd"
+            app:fab_colorPressed="@color/cool_pink"
+            app:fab_colorRipple="@color/white_transparent"
+            app:fab_label="@string/transac_retour_accueil"
+            app:fab_size="mini"
+            app:menu_showShadow="true"
+
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/layout_background_dialog"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232323"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/titre_transac_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajout d'argent"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/arlrdbd"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            />
+
+        <TextView
+            android:id="@+id/date_heure_transac_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="07/06/2020  14h23"
+            android:fontFamily="@font/arlrdbd"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/details_transac_dialog"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Ajout de 2 pièces de 0,50€"
+            android:gravity="center"
+            android:fontFamily="@font/arlrdbd"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/ancsolde_transac_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/arlrdbd"
+            android:text="Ancien solde : 1240,00 €"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/nvsolde_transac_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/arlrdbd"
+            android:text="Nouveau solde : 1260,00 €"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textVid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id : 1293"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/arlrdbd"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp"
+            android:padding="3dp"
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:src="@drawable/circle2"
+        android:tint="@color/white"
+        />
+
+
+    <ImageView
+        android:id="@+id/logo_transac_dialog"
+        android:layout_width="77dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_add_money_24dp" />
+
+
+</RelativeLayout>

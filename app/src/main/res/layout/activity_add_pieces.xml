@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".AddPieces">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="9dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titre_add_pieces" />
+
+    <TextView
+        android:id="@+id/titre_add_pieces"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/arlrdbd"
+        android:text="@string/titre_activity_add_pieces"
+        android:textColor="@color/colorText"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="56dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/titre_add_pieces"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_pieces" />
+
+
+    <EditText
+        android:id="@+id/text_nb_pieces001"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces001"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces001"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces001" />
+
+    <Button
+        android:id="@+id/btn_moins_pieces001"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_btn_plusmoins"
+        android:drawableEnd="@drawable/ic_remove_24dp"
+        android:padding="11dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/text_add_pieces001"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 0,01 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces001"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces001"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces001" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces001"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces001"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces001" />
+
+
+        <Button
+            android:id="@+id/btn_moins_pieces002"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_remove_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces001" />
+
+    <TextView
+        android:id="@+id/text_add_pieces002"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 0,02 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces002"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces002"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces002" />
+
+
+    <EditText
+        android:id="@+id/text_nb_pieces002"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces002"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces002"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces002" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces002"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces002"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces002" />
+
+        <Button
+            android:id="@+id/btn_moins_pieces005"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_remove_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces002" />
+
+
+    <EditText
+        android:id="@+id/text_nb_pieces005"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces005"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces005"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces005" />
+
+    <TextView
+        android:id="@+id/text_add_pieces005"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 0,05 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces005"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces005"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces005" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces005"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces005"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces005" />
+
+        <Button
+            android:id="@+id/btn_moins_pieces10"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_remove_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces005" />
+
+
+    <TextView
+        android:id="@+id/text_add_pieces10"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 0,10 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces10"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces10"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces10" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces10"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces10" />
+
+    <EditText
+        android:id="@+id/text_nb_pieces10"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces10"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces10"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces10" />
+
+        <Button
+            android:id="@+id/btn_moins_pieces20"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_remove_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces10" />
+
+    <EditText
+        android:id="@+id/text_nb_pieces20"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces20"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces20"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces20" />
+
+    <TextView
+        android:id="@+id/text_add_pieces20"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 0,20 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces20"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces20"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces20" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces20"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces20" />
+
+        <Button
+            android:id="@+id/btn_moins_pieces50"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_remove_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces20" />
+
+    <EditText
+        android:id="@+id/text_nb_pieces50"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces50"
+        app:layout_constraintEnd_toStartOf="@+id/text_add_pieces1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces1"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces50" />
+
+    <TextView
+        android:id="@+id/text_add_pieces50"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 0,50 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces50"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces50"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces50" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces50"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces50" />
+
+    <EditText
+        android:id="@+id/text_nb_pieces1"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces1"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces1"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces1" />
+
+    <TextView
+        android:id="@+id/text_add_pieces1"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 1 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces1"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces1"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces1" />
+
+        <Button
+            android:id="@+id/btn_moins_pieces1"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_remove_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces50" />
+
+        <Button
+            android:id="@+id/btn_plus_pieces1"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_btn_plusmoins"
+            android:drawableEnd="@drawable/ic_add_24dp"
+            android:padding="11dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_add_pieces1" />
+
+    <EditText
+        android:id="@+id/text_nb_pieces2"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:clickable="true"
+        android:digits="0123456789- "
+        android:focusable="true"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:inputType="number"
+        android:longClickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_moins_pieces2"
+        app:layout_constraintStart_toEndOf="@+id/btn_moins_pieces2"
+        app:layout_constraintTop_toTopOf="@+id/btn_moins_pieces2" />
+
+    <TextView
+        android:id="@+id/text_add_pieces2"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:text=" pièces de 2 €"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nb_pieces2"
+        app:layout_constraintStart_toEndOf="@+id/text_nb_pieces2"
+        app:layout_constraintTop_toTopOf="@+id/text_nb_pieces2" />
+
+    <Button
+        android:id="@+id/btn_moins_pieces2"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_btn_plusmoins"
+        android:drawableEnd="@drawable/ic_remove_24dp"
+        android:padding="11dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_moins_pieces1" />
+
+    <Button
+        android:id="@+id/btn_plus_pieces2"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_btn_plusmoins"
+        android:drawableEnd="@drawable/ic_add_24dp"
+        android:padding="11dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/text_add_pieces2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_add_pieces2" />
+
+    <Button
+        android:id="@+id/btn_validation_add_pieces"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/background_btn_validation_pieces"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:padding="11dp"
+        android:text="Valider"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_add_pieces2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

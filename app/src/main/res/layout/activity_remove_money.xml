@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveMoney"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/image_main2"
+        android:layout_width="328dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/img_tirelire" />
+
+    <TextView
+        android:id="@+id/textVRmMoneyTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_main2" />
+
+    <TextView
+        android:id="@+id/textVRmMoneyText"
+        android:layout_width="319dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center_horizontal"
+        android:text="@string/rm_money_text"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVRmMoneyTitre"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_confirmation_rm_money"
+        android:layout_width="230dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/rm_money_background"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:padding="11dp"
+        android:text="@string/rm_money_confirm"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonAdd"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVRmMoneyText" />
+
+    <Button
+        android:id="@+id/btn_rm_money_details"
+        android:layout_width="230dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/rm_money_background"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:padding="11dp"
+        android:text="@string/btn_details"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonAdd"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_confirmation_rm_money" />
+
+    <Button
+        android:id="@+id/btn_rm_money_retour"
+        android:layout_width="230dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/rm_money_background"
+        android:fontFamily="@font/arlrdbd"
+        android:gravity="center"
+        android:padding="11dp"
+        android:text="@string/rm_money_retour"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonAdd"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_rm_money_details" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

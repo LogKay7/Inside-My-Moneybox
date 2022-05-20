@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="31dp"
+        android:scaleType="fitCenter"
+        app:menu_icon="@drawable/ic_settings_black_40dp"
+        app:fab_hideAnimation="@anim/fab_scale_down"
+        app:fab_showAnimation="@anim/fab_scale_up"
+        app:menu_animationDelayPerItem="50"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@color/colorButtonAdd"
+        app:menu_colorPressed="@color/cool_pink"
+        app:menu_colorRipple="@color/white_transparent"
+        app:menu_fab_label=""
+        app:menu_fab_size="normal"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_textColor="@color/colorButtonAdd"
+        app:menu_openDirection="up"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="2dp"
+        app:menu_showShadow="true"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenu_item_Modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_create_black_24dp"
+            app:fab_colorNormal="@color/colorButtonAdd"
+            app:fab_colorPressed="@color/cool_pink"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="@string/titre1_fabmenu_details"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini"
+            app:menu_showShadow="true"
+            app:fab_colorRipple="@color/white_transparent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenu_item_ViewTransac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_24dp"
+            app:fab_colorNormal="@color/colorButtonAdd"
+            app:fab_colorPressed="@color/cool_pink"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label="@string/titre2_fabmenu_details"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_size="mini"
+            app:menu_showShadow="true"
+            app:fab_colorRipple="@color/white_transparent"
+
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenu_item_RmvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove_money_24dp"
+            app:fab_colorNormal="@color/colorButtonAdd"
+            app:fab_colorPressed="@color/cool_pink"
+            app:fab_label="@string/titre3_fabmenu_details"
+            app:fab_size="mini"
+            app:menu_showShadow="true"
+            app:fab_colorRipple="@color/white_transparent"
+
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

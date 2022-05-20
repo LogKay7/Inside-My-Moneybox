@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">One Tirelire</string>
+    <string name="action_settings">Settings</string>
+    <string name="titre1_fabmenu">Ajouter de l\'argent</string>
+    <string name="titre2_fabmenu">Afficher les détails</string>
+    <string name="titre3_fabmenu">Vider la tirelire</string>
+
+    <string name="titre1_fabmenu_details">Modifier le contenu</string>
+    <string name="titre2_fabmenu_details">Afficher les transactions</string>
+    <string name="titre3_fabmenu_details">Vider la tirelire</string>
+
+    <string name="titre_details">Contenu de la tirelire</string>
+
+    <string name="btn_ajt_billets">Ajouter des billets</string>
+    <string name="btn_ajt_pieces">Ajouter des pièces</string>
+    <string name="titre_activity_add_billets">Ajout de billets</string>
+    <string name="titre_activity_add_pieces">Ajout de pièces</string>
+
+    <string name="rm_money_text">Souhaitez-vous la vider?</string>
+    <string name="rm_money_confirm">Confirmer</string>
+    <string name="rm_money_retour">Retour</string>
+    <string name="btn_accueil">Accueil</string>
+    <string name="rm_money_confirm_text">L\'argent a bien été retiré</string>
+    <string name="btn_details">Détails</string>
+
+    <string name="titre_transac">Solde : </string>
+
+    <string name="transac_tout_supprimer">Supprimer toutes les transactions</string>
+    <string name="transac_reinitialiser">Réinitialiser toutes les données</string>
+    <string name="transac_retour_accueil">Accueil</string>
+
+
+</resources>
