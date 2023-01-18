@@ -1,2 +1,5 @@
 # Inside-My-Moneybox
 Small Android app made while discovering Java for Android. This app allows you to track what you put inside your moneybox.
+
+<img width="195" alt="Screenshot_20220521-150057_One Tirelire" src="https://user-images.githubusercontent.com/71137854/213272796-57bb3eb0-093f-40e6-8539-e7e0d7e871d5.jpg"> <img width="195" alt="Screenshot_20220521-150106_One Tirelire" src="https://user-images.githubusercontent.com/71137854/213273214-54db3219-02e8-4343-900c-37bca287ed51.jpg"> <img width="195" alt="Screenshot_20220521-150115_One Tirelire" src="https://user-images.githubusercontent.com/71137854/213273220-2d7c4bb6-0bf9-4805-99a4-c57ed49d39d6.jpg"> 
+<img width="195" alt="Screenshot_20220521-150127_One Tirelire" src="https://user-images.githubusercontent.com/71137854/213273222-c8414038-6719-4c00-8117-a9f5260eae3d.jpg"> <img width="195" alt="Screenshot_20220521-150135_One Tirelire" src="https://user-images.githubusercontent.com/71137854/213273226-b986b6a7-8987-42f1-a743-b3dc95f11c27.jpg"> 
